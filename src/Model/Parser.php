@@ -56,6 +56,11 @@ class Parser
         $courseNumber   = ($numberStrings[0][0]);
         $yearString     = ($numberStrings[0][1]);
 
+        // This could be broken out to specify exactly which piece is missing.
+        if (! $department || ! $semesterString || ! $courseNumber || ! $yearString) {
+            throw new InvalidArgumentException("Input string is missing details");
+        }
+
         // Semester lookup:
         $semester = self::lookupSemester(strtolower($semesterString), self::SEMESTER_DICT);
 
