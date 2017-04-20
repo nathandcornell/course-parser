@@ -26,4 +26,11 @@ class Course {
 
         $this->$property = $value;
     }
+
+    public function toString() {
+        return sprintf(
+            "● Department: %s\n● Course Number: %s\n● Year: %s\n● Semester: %s",
+            $this->department, $this->number, $this->year, $this->semester
+        );
+    }
 }

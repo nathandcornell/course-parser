@@ -18,4 +18,15 @@ class CourseTest extends TestCase
         $course->number = $newNumber;
         $this->assertEquals($newNumber, $course->number);
     }
+
+    public function testToString() {
+        $course = new Course(self::DEPARTMENT, self::NUMBER, self::YEAR, self::SEMESTER);
+
+        $validString = sprintf(
+            "● Department: %s\n● Course Number: %s\n● Year: %s\n● Semester: %s",
+            self::DEPARTMENT, self::NUMBER, self::YEAR, self::SEMESTER
+        );
+
+        $this->assertEquals($validString, $course->toString());
+    }
 }
