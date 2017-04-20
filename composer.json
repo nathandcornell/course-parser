@@ -1,0 +1,16 @@
+{
+    "name": "natec/course-parser",
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
+    },
+    "authors": [
+        {
+            "name": "Nate Cornell",
+            "email": "nathandcornell@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"CourseParser\\": "src/"}
+    }
+}
