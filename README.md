@@ -12,7 +12,7 @@ input string (e.g. 'CS-111 Fall 2016') and return a bullet list of the details.
     $courseString = $testCourse->toString();
 
 ## Development/Testing:
-- Make sure you have [Composer](http s://getcomposer.org/) installed.
+- Make sure you have [Composer](https://getcomposer.org/) installed.
 - Clone/fork this repository
 - Run ```$ composer install``` to install dev dependencies
 - Test by running ```$ phpunit --colors=always ./test``` from the project folder
